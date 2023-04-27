@@ -1,0 +1,31 @@
+<div class="table-responsive">
+  <div class="tableHead">
+    <p>Your recent URLs</p>
+  </div>
+  <div class="table-container">
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">Long Url</th>
+          <th scope="col">Short Url</th>
+          <th scope="col">Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let url of urls.reverse()">
+          <td><a href="{{url.long_url}}">{{url.long_url}}</a></td>
+          <td><a href="{{host}}{{url.short_url}}">{{host}}{{url.short_url}}</a></td>
+          <td class="expiredRow"><p *ngIf="hasExpired(url.expired_at);else activeBlock">
+            <i class="fa fa-exclamation-triangle" aria-hidden="true" style="color:red"></i></p>
+            <ng-template #activeBlock>
+              <i class="fa fa-check-circle" aria-hidden="true" style="color:rgb(88, 219, 88)"></i>
+            </ng-template>
+          </td>
+        </tr>
+        <tr *ngIf="urls.length===0" class="noTableData">
+            <td colspan="2">No recent URLs in your history</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

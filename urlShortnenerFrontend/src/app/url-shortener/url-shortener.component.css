@@ -1,0 +1,31 @@
+.center{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: row;
+    width:100%;
+    padding:20px;
+}
+.leftSide{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;
+    height: 570px;
+    padding: 0!important;
+    margin: 0 !important;
+}
+.rightSide{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;
+    padding-top:10px ;
+    max-height: 570px;
+}
+h1{
+    margin-bottom:10px ;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4);
+}

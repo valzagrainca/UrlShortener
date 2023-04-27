@@ -1,0 +1,32 @@
+<div class="formContainer" [formGroup]="urlForm">
+    <form action="">
+      <div class="form-group flex-container">
+        <label for="url"><i class="fa fa-link" aria-hidden="true"></i> Enter a long url to make a short one</label>
+        <input type="text" class="form-control url-input" formControlName="fullURL" [ngClass]="{'is-invalid': submitted && urlForm.get('fullURL')?.errors}">
+        <div *ngIf="submitted && urlForm.get('fullURL')?.errors" class="text-danger">
+          Please enter a valid URL
+        </div>
+        <label for="costumizeUrl" class="costumizeLabel"><i class="fa fa-chain-broken" aria-hidden="true"></i> Costumize Url</label>
+        <div class="customizeContainer">
+          <div>
+            <input type="text" class="form-control" formControlName="hostName" readonly>
+            <div *ngIf="aliasError" class="text-danger">
+            </div>
+          </div>
+          <div>
+            <input type="text" class="form-control" placeholder="alias" formControlName="alias" [ngClass]="{'is-invalid': aliasError}">
+            <div *ngIf="aliasError" class="text-danger">
+              Alias is not valid
+            </div>
+          </div>
+        </div>
+        <div class="date">
+          <input type="datetime-local" class="form-control" [min]="minExpiryDateTime()" [max]="maxExpiryDateTime()" formControlName="expirationDate">
+        </div>
+        <div class="buttonContainer">
+            <button type="button" class="btn btn-primary" (click)="shortUrlButtonClicked()">Submit</button>
+        </div>
+      </div>
+    </form>
+</div>
+  
