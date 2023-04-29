@@ -1,5 +1,5 @@
-import { Url } from "./url";
+import { Url } from './url';
 
-export interface UrlResponseModel{
-    urls:Url[];
+export interface UrlResponseModel {
+  urls: Url[];
 }

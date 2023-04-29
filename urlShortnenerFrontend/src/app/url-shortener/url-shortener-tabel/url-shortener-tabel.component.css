@@ -1,24 +1,28 @@
-table{
+table {
     width: 640px;
 }
-th:first-child{
-    width:60%;
-}
-th:nth-child(2){
-    width:30%;
-}
-th:nth-child(3){
-    width:10%;
+
+th:first-child {
+    width: 60%;
 }
 
-.table-responsive{
+th:nth-child(2) {
+    width: 30%;
+}
+
+th:nth-child(3) {
+    width: 10%;
+}
+
+.table-responsive {
     height: 570px;
     background-color: #fff;
     box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
 }
-.tableHead{
+
+.tableHead {
     background-color: #394867;
-    height:50px;
+    height: 50px;
     display: flex;
     padding: 10px;
     padding-bottom: 0;
@@ -27,7 +31,8 @@ th:nth-child(3){
     color: #fff;
     box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
 }
-.tableHead p{
+
+.tableHead p {
     font-size: 20px;
 }
 
@@ -37,7 +42,7 @@ thead tr th {
     background-color: #F1F6F9;
 }
 
-.table-container{
+.table-container {
     display: block;
     max-height: 518px;
     overflow-y: scroll;
@@ -47,24 +52,34 @@ thead tr th {
 .table-container::-webkit-scrollbar {
     width: 7px;
 }
+
 .table-container::-webkit-scrollbar-thumb {
-  background-color: darkgray;
+    background-color: darkgray;
 }
-.noTableData{
+
+.noTableData {
     padding: 0;
-    width:100%;
+    width: 100%;
 }
-.noTableData td{
+
+.noTableData td {
     padding: 40px;
-    width:100%;
+    width: 100%;
     text-align: center;
 }
-.expiredRow{
+
+.expiredRow {
     text-align: center;
-    font-size:18px;
+    font-size: 18px;
 }
-td{
-    min-height:50px;
+
+td {
+    min-height: 50px;
     max-height: 150px;
     vertical-align: center;
+}
+
+a {
+    color: #2F58CD;
+    text-decoration: none;
 }

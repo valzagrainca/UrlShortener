@@ -1,8 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~bootstrap/dist/css/bootstrap.css";
 
-body{
+body {
     height: 100%;
-    background-image:linear-gradient(150deg,rgb(254, 248, 228) 25%,rgb(252, 238, 203) 25%,rgb(252, 238, 203) 75%,rgb(254, 248, 228) 33%)
-
+    background-color: #144272;
 }
